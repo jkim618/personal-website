@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='index.css' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,400" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap|Fira+Sans|Merriweather+Sans:300,800|Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#parallax">Home</a>
+    <a href="#aboutme">About Me</a>
+    <a href="#section1">Experience</a>
+</div>
+
+<div class="parallax" id="parallax">
+    <p>Welcome to my website.</p>
+    <h1>My name is Jane Kim.</h1>
+    <script>
+        function slideDown(){
+            $('html,body').animate({scrollTop:
+            $(".about-me").offset().top},500)
+            }
+        </script>
+    <div class="arrow">
+    <img src="arrow.png" onclick="slideDown()">
+    </div>
+</div>
+
+<div class="about-me" id="aboutme">
+    <div class="textline"><h1>About Me</h1></div>
+    <div class="picture">
+        <img src="mee.png">
+    </div>
+    <div class = "description">
+        <h3>Hello, I am Jane Kim.</h3>
+        <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
+            minoring in Economics. 
+        </p>
+    <div class="icons">
+        <i id="github" class="fa fa-github" style="font-size:36px"></i>
+        <i id="linked" class="fa fa-linkedin-square" style="font-size:36px"></i>
+        <i id="resume" class="fa fa-wpforms" style="font-size:36px"></i>
+    </div>
+    </div>
+</div>
+
+<div class="parallax2">
+    <div class = "textline">
+    </div>
+</div>
+
+<div class="section1" id="section1">
+    <h1>hi</h1>
+</div>
+
+</body>
+
+<script>
+
+
+</script>
+</html>

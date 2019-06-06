@@ -1,0 +1,215 @@
+body, html{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.parallax{
+    background-image:url("me.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position:center;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    position:relative
+}
+
+.parallax2{
+    background-image:url("work.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position:center;
+    height:70%;
+    width:100%;
+    margin:0;
+    padding:0;
+    position:relative
+}
+
+.parallax p{
+    color:white;
+    font-family: 'Muli', sans-serif;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    font-weight:200;
+    position:absolute;
+    font-size:35px;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parallax h1{
+    color:white;
+    font-family: 'Muli', sans-serif;
+    font-size:55px;
+    margin-top:-10px;
+    position:absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow img{
+	width:100px;
+    margin-left:45%;
+    margin-top:620px;
+    margin-bottom:20px;
+}
+
+.about-me{
+    height:100vh;
+    background-color: #dbd9dc;
+    margin:0 auto;
+}
+
+
+.about-me h1{
+    color:#5d4474;
+    padding-top:25px;
+    text-align:center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:40px;
+    margin-top:0px;
+    position:relative;
+    top:30px;
+}
+
+.textline h1 {
+    overflow: hidden;
+    text-align: center;
+   }
+
+.textline h1:before,
+.textline :after {
+    background-color: #5d4474;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+   }
+.textline h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+.textline h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+.picture img{
+    width:40%;
+    margin-left:10%;
+    margin-top:80px;
+    display:inline;
+}
+
+.description{
+    position:absolute;
+    margin-right:10%;
+    margin-left:55%;
+    margin-top:-25%;
+    padding:10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.description h3{
+    color:#393439;
+    font-weight:800;
+    margin-top: 10px;
+    text-align:center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.description p{
+    color:#393439;
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.icons{
+    position:relative;
+    margin-right:10%;
+    margin-left:25%;
+    margin-top:-10px;
+}
+#github{
+    margin:20px;
+}
+
+#github:hover{
+    color:#5d4474;
+}
+
+#linked{
+    margin:20px;
+}
+
+#linked:hover{
+    color:#5d4474;
+}
+
+#resume{
+    margin:20px;
+}
+
+#resume:hover{
+    color:#5d4474;
+}
+
+.section1{
+    height:100vh;
+    background:blue;
+}
+.navbar {
+    background:transparent; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .navbar a:hover {
+    background-color:#5d4474;
+    color: white;
+  }
+
+  /*@media (max-width: 1200px){
+      .parallax h1{
+          margin-right:50px;
+      }
+      .parallax p{
+          margin-right:80px;
+      }
+  }
+
+  @media (max-width: 500px){
+      .parallax h1{
+          font-size:50px;
+          display:block;
+          margin-right:50px;
+      }
+      .parallax p{
+          margin-left:80px;
+          margin-bottom:500px;
+          margin-right:80px;
+          display:block;
+          font-size:30px;
+      }
+  }*/
