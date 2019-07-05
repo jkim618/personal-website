@@ -4,8 +4,115 @@ body, html{
     padding:0;
 }
 
+.topnav {
+    background-color: #0b0b10;
+    overflow: hidden;
+  }
+  .topnav p{
+     color: #00fff9;
+  }
+
+  .topnav p{
+    margin:0;
+    float: right;
+    color: #00fff9;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .topnav p:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.three{
+    background:#0c0d13;
+    height:70vh;
+}
+
+.three h1{
+    font-size:45px;
+    color:#77f9f2;
+}
+
+.three p{
+    color:#c5c6c8;
+}
+
+
+.column{
+    float:left;
+    width:33.33%;
+    text-align:center;
+}
+.column p{
+    padding:40px;
+    padding-top:0;
+}
+
+.column img{
+    width:40%;
+    margin:0 auto;
+}
+
+.column1{
+    float:left;
+    width:50%;
+    text-align:center;
+}
+
+.column1 img{
+    padding-top:30px;
+    width:80%;
+    padding-left:20%;
+}
+
+#description1{
+    padding-top:30px;
+    margin-left:10%;
+    padding-right:20%;
+    text-align:left;
+}
+
+#description1 h3{
+    color:#c5c6c8;
+    font-weight:800;
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#description1 p{
+    color:#c5c6c8;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+
+.row1{
+    margin-top:80px;
+}
+
+.row1:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.row{
+    margin-top:80px;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
 .parallax{
-    background-image:url("me.jpg");
+    background-image:url("me2.jpg");
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size: cover;
@@ -23,19 +130,32 @@ body, html{
     background-attachment:fixed;
     background-size: cover;
     background-position:center;
-    height:70%;
+    height:66%;
     width:100%;
     margin:0;
     padding:0;
     position:relative
 }
 
-.parallax p{
+.parallax3{
+    background-image:url("project.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position:center;
+    height:80%;
+    width:100%;
+    margin:0;
+    padding:0;
+    position:relative
+}
+
+/* .parallax p{
     color:white;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight:200;
     border-top: 2px white solid;
     border-bottom: 2px white solid;
-    font-weight:200;
     position:absolute;
     font-size:35px;
     top: 43%;
@@ -45,106 +165,69 @@ body, html{
 
 .parallax h1{
     color:white;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size:55px;
     margin-top:-10px;
     position:absolute;
     top:60%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+#h1{
+    color:#77f9f2;
+    padding-top:50px;
+    text-align:center;
+    font-size:45px;
+    margin-top:0px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.parallax{
+    color:white;
+    margin-top:0px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:80px;
+    position:relative;
 }
 
-.arrow img{
-	width:100px;
-    margin-left:45%;
-    margin-top:620px;
-    margin-bottom:20px;
+.parallax h2{
+    margin:0;
+    text-align:center;
+    padding-top:225px;
 }
+
+.arrow{
+    width:100px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top:300px;
+}
+
 
 .about-me{
-    height:100vh;
-    background-color: #dbd9dc;
+    height:95vh;
+    background-color: #232c38;
     margin:0 auto;
+    overflow-y: scroll;
 }
 
-
-.about-me h1{
-    color:#5d4474;
-    padding-top:25px;
-    text-align:center;
-    font-family: 'Fira Sans', sans-serif;
-    font-size:40px;
-    margin-top:0px;
-    position:relative;
-    top:30px;
-}
-
-.textline h1 {
-    overflow: hidden;
-    text-align: center;
-   }
-
-.textline h1:before,
-.textline :after {
-    background-color: #5d4474;
-    content: "";
-    display: inline-block;
-    height: 3px;
-    position: relative;
-    vertical-align: middle;
-    width: 20%;
-   }
-.textline h1:before {
-    right: 0.5em;
-    margin-left: -50%;
-   }
-.textline h1:after {
-    left: 0.5em;
-    margin-right: -50%;
-   }
-
-.picture img{
-    width:40%;
-    margin-left:10%;
-    margin-top:80px;
-    display:inline;
-}
-
-.description{
-    position:absolute;
-    margin-right:10%;
-    margin-left:55%;
-    margin-top:-25%;
-    padding:10px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-.description h3{
-    color:#393439;
-    font-weight:800;
-    margin-top: 10px;
-    text-align:center;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-.description p{
-    color:#393439;
-    text-align:center;
-    font-family: 'Nunito', sans-serif;
-}
 
 .icons{
     position:relative;
-    margin-right:10%;
-    margin-left:25%;
-    margin-top:-10px;
+    margin:0 auto;
+    color:#78f9f2;
+    overflow: hidden;
 }
 #github{
-    margin:20px;
+    margin-right:20px;
 }
 
 #github:hover{
-    color:#5d4474;
+    color:#c5c6c8;
 }
 
 #linked{
@@ -152,7 +235,7 @@ body, html{
 }
 
 #linked:hover{
-    color:#5d4474;
+    color:#c5c6c8;
 }
 
 #resume{
@@ -160,13 +243,35 @@ body, html{
 }
 
 #resume:hover{
-    color:#5d4474;
+    color:#c5c6c8;
 }
 
 .section1{
-    height:100vh;
-    background:blue;
+    height:150vh;
+    background:#15202b;
+    position:relative;
+    text-align:center;
+} 
+
+.box{
+    margin-top:30px;
+    background:#c5c6c8;
+    height:80vh;
+    display:inline-block;
+    max-width:150vh;
+    position:relative;
 }
+
+.box2{
+    position:relative;
+    
+}
+
+.section2{
+    height:100vh;
+    background-color:#efefef;
+}
+
 .navbar {
     background:transparent; /* Black background color */
     position: fixed; /* Make it stick/fixed */
@@ -189,27 +294,3 @@ body, html{
     background-color:#5d4474;
     color: white;
   }
-
-  /*@media (max-width: 1200px){
-      .parallax h1{
-          margin-right:50px;
-      }
-      .parallax p{
-          margin-right:80px;
-      }
-  }
-
-  @media (max-width: 500px){
-      .parallax h1{
-          font-size:50px;
-          display:block;
-          margin-right:50px;
-      }
-      .parallax p{
-          margin-left:80px;
-          margin-bottom:500px;
-          margin-right:80px;
-          display:block;
-          font-size:30px;
-      }
-  }*/

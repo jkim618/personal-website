@@ -5,58 +5,103 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:200,400" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Asap|Fira+Sans|Merriweather+Sans:300,800|Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Fira+Sans|Merriweather+Sans:300,800|Nunito:200,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title></title>
 </head>
 <body>
 
-<div class="navbar">
-    <a href="#parallax">Home</a>
-    <a href="#aboutme">About Me</a>
-    <a href="#section1">Experience</a>
+<div class="topnav">
+  <p href="#contact">Contact</a>
+  <p href="#experience">Experience</a>
+  <p onclick="slideDown()">About me</a>
 </div>
 
+
 <div class="parallax" id="parallax">
-    <p>Welcome to my website.</p>
-    <h1>My name is Jane Kim.</h1>
+    <!-- <p>Welcome to my website.</p>
+    <h1>My name is Jane Kim.</h1> -->
+    <div class="janekim">
+        <h2>JANE KIM.</h2>
+    </div>
     <script>
         function slideDown(){
             $('html,body').animate({scrollTop:
-            $(".about-me").offset().top},500)
+            $(".about-me").offset().top},600)
             }
-        </script>
-    <div class="arrow">
-    <img src="arrow.png" onclick="slideDown()">
+    </script>
+    <img src="arrow.png" onclick="slideDown()" class="arrow">
+</div>
+
+
+<div class="about-me" id="aboutme">
+    <h1 id="h1">Introduction</h1>
+    <div class="row1">
+        <div class="column1">
+            <img src="mee.png">
+        </div>
+        <div class="column1">
+            <div id="description1">
+            <h3>Hello, I am Jane Kim.</h3>
+            <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
+                minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
+                I grew interest in front-end web development. I plan to hopefully become a full-stack developer,
+                both working front-end and back-end to build apps that are modern and useful.
+                <div class="icons">
+                        <a href="https://www.linkedin.com/in/jooaeunkim618/"><i id="github" class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                    <a href="https://github.com/jkim618"><i id="linked" class="fa fa-github" style="font-size:36px"></i></a>
+                    <i id="resume" class="fa fa-wpforms" style="font-size:36px"></i>
+                </div>
+            </div>
+            </p>
+        </div>
     </div>
 </div>
 
-<div class="about-me" id="aboutme">
-    <div class="textline"><h1>About Me</h1></div>
-    <div class="picture">
-        <img src="mee.png">
-    </div>
-    <div class = "description">
-        <h3>Hello, I am Jane Kim.</h3>
-        <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
-            minoring in Economics. 
-        </p>
-    <div class="icons">
-        <i id="github" class="fa fa-github" style="font-size:36px"></i>
-        <i id="linked" class="fa fa-linkedin-square" style="font-size:36px"></i>
-        <i id="resume" class="fa fa-wpforms" style="font-size:36px"></i>
-    </div>
+
+<div class="three">
+    <h1 id="h1">Developer, Designer, Dancer</h1>
+    <div class="row">
+        <div class="column">
+            <img src="icon1.jpg">
+            <p>I love to developing and building applications that are useful and creative, and also satisfy my interests.</p>
+        </div>
+        <div class="column">
+            <img src="icon2.jpg">
+            <p>I believe I had good artistic eye ever since I was little. Looking at clean, yet modern design satisfies me.</p>
+        </div>
+        <div class="column">
+            <img src="icon3.jpg">
+            <p>I have a high passion for dancing. I am currently in K-Edge Dance Crew at UVA.</p>
+        </div>
     </div>
 </div>
 
 <div class="parallax2">
-    <div class = "textline">
-    </div>
+
 </div>
 
 <div class="section1" id="section1">
-    <h1>hi</h1>
+    <h1 id="h1">Experience</h1>
+    <div class="box">
+        <div class="box2">
+        <h3>Jane Kim</h3>
+        <p>703-945-7857 | jk9ay@virginia.edu</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. N
+                uam asperiores. Quae, fugit qui impedit ipsa odio 
+                uam asperiores. Quae, fugit qui impedit ipsa odio facere itaque incid
+                uam asperiores. Quae, fugit qui impedit ipsa odio facere itaque incidfacere itaque incidatus atque, maiores nesciunt totam a tenetur quidem nulla eius iusto, aliquam asperiores. Quae, fugit qui impedit ipsa odio facere itaque incidunt?</p>
+        </div>
+    </div>
 </div>
+
+<div class="parallax3">
+</div>
+
+<div class="section2">
+    <div class="textline"><h1>Example Projects</h1></div>
+</div>
+    
 
 </body>
 
