@@ -25,9 +25,49 @@ body, html{
     color: white;
   }
 
+.first{
+  height:100%;
+  background-color: #c5c6c8;
+  background-image: linear-gradient(to right, #dedfe1 46%, #a8a8a8 41%);
+}
+
+.first-description{
+  /* border: 3px solid blue; */
+  margin: auto;
+}
+
+.first-description-inside{
+  padding-top: 150px;
+  padding-left: 130px;
+  font-size: 30px;
+  color: #232c38;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.first-description-inside h2{
+  margin: 0 auto;
+  font-size: 55px;
+}
+
+.first-description-inside p {
+  font-size: 18px;
+  width: 450px;
+}
+
+.first-description-inside img{
+  width: 150px;
+  margin-left: -30px;
+}
+
+#janecontent img{
+  width: 430px;
+  position: absolute;
+  bottom: -50px;
+  right: 150px;
+}
+
 .three{
     background:#0c0d13;
-    height:80vh;
 }
 
 .three h1{
@@ -37,6 +77,20 @@ body, html{
 
 .three p{
     color:#c5c6c8;
+}
+
+#skills_hr{
+  border: 1px solid #77f8f3;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.skills img{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 
@@ -63,9 +117,10 @@ body, html{
 
 .column1 img{
     padding-top:30px;
-    width:92%;
+    width:95%;
     padding-left:20%;
 }
+
 
 #description1{
     padding-top:30px;
@@ -107,24 +162,26 @@ body, html{
     display:table;
     clear:both;
 }
+
 #col2-left{
   padding-top:30px;
-  border: 3px solid green;
-  margin-left: -20px;
+  margin-left: -10px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .col2{
-   border: 2px solid blue; 
-   width: 80px;
     float:left;
     width:50%;
     text-align:center;
     color:#0d0d13;
     font-family: 'Nunito', sans-serif;
+
 }
 
 .col2 p{
     text-align:left;
+    font-size: 15px;
 }
 
 .row{
@@ -156,7 +213,7 @@ body, html{
     background-attachment:fixed;
     background-size: cover;
     background-position:center;
-    height:70%;
+    height:60%;
     width:100%;
     margin:0;
     padding:0;
@@ -169,7 +226,7 @@ body, html{
     background-attachment:fixed;
     background-size: cover;
     background-position:center;
-    height:58%;
+    height:45%;
     width:100%;
     margin:0;
     padding:0;
@@ -216,7 +273,10 @@ body, html{
     margin:0 auto;
     overflow-y: scroll;
 }
-
+#aboutme_hr{
+  border: 1px solid #77f8f3;
+  margin-top: -10px;
+}
 
 .icons{
     position:relative;
@@ -370,7 +430,6 @@ body, html{
     background-color: #c5c6c8;
     position: relative;
     border-radius: 6px;
-    border: 3px solid red;
     /* border: 3px solid red; */
   }
   
@@ -406,3 +465,5 @@ body, html{
       left: 0%;
     }
   }
+
+  

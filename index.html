@@ -13,12 +13,12 @@
 
 <div class="topnav">
   <p href="#contact">Contact</a>
-  <p href="#experience">Experience</a>
-  <p onclick="slideDown()">About me</a>
+  <p onclick = "experience()">Experience</a>
+  <p onclick = "slideDown()">About me</a>
 </div>
 
 
-<div class="parallax" id="parallax">
+<!-- <div class="parallax" id="parallax">
     <div class="janekim">
         <h2>JANE KIM.</h2>
     </div>
@@ -27,24 +27,54 @@
             $('html,body').animate({scrollTop:
             $(".about-me").offset().top},600)
             }
+        function experience(){
+            $('html,body').animate({scrollTop:
+            $(".section2").offset().top},950)
+        }
     </script>
     <img src="arrow.png" onclick="slideDown()" class="arrow">
-</div>
+</div> -->
 
+<script>
+    function slideDown(){
+        $('html,body').animate({scrollTop:
+        $(".about-me").offset().top},600)
+        }
+    function experience(){
+        $('html,body').animate({scrollTop:
+        $(".section2").offset().top},950)
+    }
+</script>
+
+<div class="first">
+    <div class ="first-description">
+        <div class ="first-description-inside">
+            <h2>Developer.</h2>
+            <h2>Designer.</h2>
+            <h2>Dancer.</h2>
+            <p>Currently a 4th year UVA student looking for full-time position as a front-end developer. Specialized in Javascript, HTML, CSS, and ReactJS. </p>
+            <img src="arrowcolored.jpg" onclick="slideDown()">
+        </div>
+    </div>
+    <div id = "janecontent">
+        <img src="janeshadow.png">
+    </div>
+</div>
 
 <div class="about-me" id="aboutme">
     <h1 id="h1">Introduction</h1>
     <div class="row1">
         <div class="column1">
-            <img src="mee.png">
+            <img src="mee.png" id="myimage">
         </div>
         <div class="column1">
             <div id="description1">
             <h3>Hello, I am Jane Kim.</h3>
+            <hr id="aboutme_hr">
             <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
                 minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
                 I grew interest in front-end web development. I am constantly looking for opportunities to improve
-                both my technical and designing skills by building applications that are both modern and interesting.
+                both my technical and designing skills by building applications that are modern and interesting.
                 <div class="icons">
                     <a href="https://www.linkedin.com/in/jooaeunkim618/" style="color: inherit;"target="_blank"><i id="github" class="fa fa-linkedin-square" style="font-size:36px"></i></a>
                     <a href="https://github.com/jkim618" style="color: inherit;"target="_blank"><i id="linked" class="fa fa-github" style="font-size:36px"></i></a>
@@ -75,6 +105,10 @@
             <p>I have a high passion for dancing. I am currently in K-Edge Dance Crew at UVA.</p>
         </div>
     </div>
+    <hr id = "skills_hr">
+    <div class = "skills">
+        <img src="skills.jpg">
+    </div>
 </div>
 
 <div class="parallax3">
@@ -93,10 +127,9 @@
                 <div class="col2">
                     <p>I am currently working as a Web Development Intern at WillowTree Apps.
                         I am mainly working on improving user experience on the HBO Nordic Web Application
-                        using ReactJS, Redux, HTML, and CSS. I am maximizing responsive design and cooperating
+                        using ReactJS, Redux, HTML, and CSS. I am cooperating
                         with designers to match visual design intent, as well as maintaining and scaling the
-                        Application by working with back-end database as well as different platforms
-                        such as PhraseApp and Clearleap.
+                        Application by working with back-end database.
                     </p>
                 </div>
             </div>
