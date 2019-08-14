@@ -27,13 +27,65 @@ body, html{
 
 .first{
   height:100%;
-  background-color: #c5c6c8;
-  background-image: linear-gradient(to right, #dedfe1 46%, #a8a8a8 41%);
+  background-image: url('backgroundme.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; 
 }
 
-.first-description{
-  /* border: 3px solid blue; */
-  margin: auto;
+.leftt{
+  float: left;
+  width: 45%;
+  height: 100%;
+  position: relative;
+  color: #e5e5e5;
+}
+
+.left-content{
+  padding-left: 20%;
+  padding-top: 30%;
+  padding-right: 10%;
+  position: absolute;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.left-content h1{
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 45px;
+  text-shadow: 5px 2px #575964;
+}
+
+.one{
+  position: relative;
+  z-index:1;
+}
+
+.one:after{
+  content:"";
+  position:absolute;
+  border: 5px solid #77f8f3;
+  width: 210px;
+  z-index:-1;
+  top: 76%;
+  left: 7%;
+}
+
+.rightt{
+  height: 100%;
+  float: right;
+  width: 55%;
+  position: relative;
+}
+
+.rightt img{
+  width: 400px;;
+  position: relative;
+  left: 50%;
+}
+
+.right-content{
+  position: absolute;
 }
 
 .first-description-inside{
@@ -59,12 +111,45 @@ body, html{
   margin-left: -30px;
 }
 
-#janecontent img{
+#janecontent{
+  position: relative;
+  border: 3px solid green;
+  height: 40vh;
+}
+
+.experience{
+}
+
+.experience-left{
+  float:left;
+  width: 70%;
+  /* border: 2px solid red; */
+  color: white;
+  position: relative;
+  height: 100%;
+  
+}
+
+.experience-right{
+  float:right;
+  width: 30%;
+  /* border: 2px solid yellow; */
+  color: white;
+}
+
+.willowtree{
+  padding-left: 10%;
+}
+
+.willowtree h1,p{
+  margin: 0 auto;
+}
+
+/* #janecontent img{
   width: 430px;
   position: absolute;
-  bottom: -50px;
-  right: 150px;
-}
+  background-color:rgba(255,255,255,0.5);
+} */
 
 .three{
     background:#0c0d13;
@@ -466,4 +551,7 @@ body, html{
     }
   }
 
-  
+.project{
+  background-color: black;
+  height: 100vh;
+}
