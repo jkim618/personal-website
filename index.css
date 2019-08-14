@@ -33,36 +33,33 @@ body, html{
   background-size: cover; 
 }
 
-.container1{
-  clear: left;
-    float: left;
-    width: 100%;
-    overflow: hidden;
-    background-color: green;
+.first img{
+  margin-top: 30px;
+  width: 140px;
+  opacity: 0.8;
 }
 
-.container2{
+.leftt{
   float: left;
-  width: 100%;
+  width: 45%;
+  height: 100%;
   position: relative;
-  right: 50%;
-  background: #fff689;
+  color: #e5e5e5;
 }
 
-.col-1{
-  float: left;
-  width: 46%;
-  position: relative;
-  left: 52%;
-  overflow: hidden;
+.left-content{
+  padding-left: 20%;
+  padding-top: 30%;
+  padding-right: 10%;
+  position: absolute;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.col-2{
-  float: left;
-  width: 46%;
-  position: relative;
-  left: 56%;
-  overflow: hidden;
+.left-content h1{
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 45px;
+  text-shadow: 5px 2px #575964;
 }
 
 .one{
@@ -132,6 +129,7 @@ body, html{
   overflow: auto;
   position: relative;
 }
+
 
 /* #janecontent img{
   width: 430px;
@@ -328,18 +326,6 @@ body, html{
     padding-top:225px;
 }
 
-.arrow{
-    width:100px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top:320px;
-}
-
-
 .about-me{
     height:95vh;
     background-color: #232c38;
@@ -347,8 +333,7 @@ body, html{
     overflow-y: scroll;
 }
 #aboutme_hr{
-  border: 1px solid #77f8f3;
-  margin-top: -10px;
+  border: 2px solid #77f8f3;
 }
 
 .icons{
@@ -408,6 +393,79 @@ body, html{
     background-color:#232c38;
     height:150vh;
 }
+
+.container1{
+  clear: left;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: green; */
+}
+
+.container2{
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 50%;
+  /* background: #fff689; */
+}
+
+.col-1{
+  float: left;
+  width: 52%;
+  position: relative;
+  left: 52%;
+  overflow: hidden;
+  /* border: 2px solid red; */
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  padding-left: 2%;
+}
+
+.col-1-desc{
+  border: 2px solid;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+}
+
+.col-1-desc h1, h3, p{
+  margin: 0 auto;
+  color: #c5c6c8;
+}
+
+.col-1-desc h3{
+  font-size: 18px;
+}
+
+.col-1-desc h1{
+  font-size: 25px;
+}
+
+.col-1-desc p{
+  font-size: 15px;
+}
+
+.col-2{
+  float: left;
+  width: 40%;
+  position: relative;
+  left: 56%;
+  overflow: hidden;
+  text-align: center;
+  border: 3px solid green;
+  margin-bottom: 60px;
+}
+
+.col-2-desc{
+  /* border:5px solid; */
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
 
 * {
     box-sizing: border-box;

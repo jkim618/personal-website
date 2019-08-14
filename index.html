@@ -12,9 +12,10 @@
 <body>
 
 <div class="topnav">
-  <p href="#contact">Contact</a>
-  <p onclick = "experience()">Experience</a>
-  <p onclick = "slideDown()">About me</a>
+    <p href="#contact">Contact</p>
+    <p onclick = "experience()">Experience</a>
+    <p>Skills</p>
+    <p onclick = "slideDown()">About me</a>
 </div>
 
 
@@ -47,17 +48,28 @@
 </script>
 
 <div class="first">
-    <div class="container1">
-        <div class="container2">
-            <div class = "col-1">
-                left
+    <div class="leftt">
+        <div class="left-content">
+            <div class="one">
+                <h1>Developer.</h1>
             </div>
-            <div class = "col-2">
-                right
+            <div class="one">
+                <h1>Designer.</h1>
             </div>
+            <div class="one">
+                <h1>Dancer.</h1>
+            </div>
+            <br/>
+            <p>Jane Kim. Currently a 4th year UVA student looking for full-time position as a front-end developer. 
+                Specialized in Javascript, HTML, CSS, and ReactJS.</p>
+            <img src="arrow.png" onclick="slideDown()" class="arrow">
         </div>
     </div>
-
+    <div class="rightt">
+        <div class="right-content">
+            
+        </div>
+    </div>
     <!-- <div class ="first-description">
         <div class ="first-description-inside">
             <h2>Developer.</h2>
@@ -86,11 +98,11 @@
                 minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
                 I grew interest in front-end web development. I am constantly looking for opportunities to improve
                 both my technical and designing skills by building applications that are modern and interesting.
-                <div class="icons">
+                <!-- <div class="icons">
                     <a href="https://www.linkedin.com/in/jooaeunkim618/" style="color: inherit;"target="_blank"><i id="github" class="fa fa-linkedin-square" style="font-size:36px"></i></a>
                     <a href="https://github.com/jkim618" style="color: inherit;"target="_blank"><i id="linked" class="fa fa-github" style="font-size:36px"></i></a>
                     <i id="resume" class="fa fa-wpforms" style="font-size:36px"></i>
-                </div>
+                </div> -->
             </div>
             </p>
         </div>
@@ -127,16 +139,64 @@
 
 <div class = "section2">
     <h1 id ="h1">Experience</h1>
-    <div class = "experience">
-        <div class = "experience-left">
-            <div class = "willowtree">
-                <h1>Software Engineer Intern</h1>
-                <p>WillowTree</p>
-                <p>June 2019 - Present</p>
+    <div class="container1">
+        <div class="container2">
+            <div class = "col-1">
+                <div class= "col-1-desc">
+                    <h1>Software Engineer Intern</h1>
+                    <h3>WillowTree, Charlottesville, VA</h3>
+                    <p>June 2019 - August 2019</p>
+                    <br/>
+                    <p>I worked at WillowTree as a Software Engineer Intern
+                        in the web development team for HBO Nordic. I also worked 
+                        closely with the design team and implemented 
+                        UI changes in order to fix the discrepancies between different
+                        web browers and the mobile version of the application.
+                    </p>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class="col-2-desc">
+                    <img src="willowtree.jpg" style="width:175px"/>
+                </div>
             </div>
         </div>
-        <div class = "experience-right">
-            <img src="willowtree.jpg" style="width:200px"/>
+        <div class="container2">
+            <div class = "col-1">
+                <div class= "col-1-desc">
+                    <h1>Web Developer</h1>
+                    <h3>HackCville, Charlottesville, VA</h3>
+                    <p>June 2019 - August 2019</p>
+                    <br/>
+                    <p>I participated in a Student Web Development program
+                        where I learned basic prototyping skills with Figma.
+                        I also learned to make static webpages with HTML, CSS,
+                        Javascript. 
+                    </p>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class="col-2-desc">
+                    <img src="hackcville.jpg" style="width:175px"/>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class = "col-1">
+                <div class= "col-1-desc">
+                    <h1>Customer Service Representative</h1>
+                    <h3>Nonstop Delivery, Chantilly, VA</h3>
+                    <p>June 2019 - August 2019</p>
+                    <br/>
+                    <p>As a Customer Service Representative, 
+                    </p>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class="col-2-desc">
+                    <img src="nsd.jpg" style="width:175px"/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
