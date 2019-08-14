@@ -33,27 +33,36 @@ body, html{
   background-size: cover; 
 }
 
-.leftt{
+.container1{
+  clear: left;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    background-color: green;
+}
+
+.container2{
   float: left;
-  width: 45%;
-  height: 100%;
+  width: 100%;
   position: relative;
-  color: #e5e5e5;
+  right: 50%;
+  background: #fff689;
 }
 
-.left-content{
-  padding-left: 20%;
-  padding-top: 30%;
-  padding-right: 10%;
-  position: absolute;
-  font-family: 'Fira Sans', sans-serif;
+.col-1{
+  float: left;
+  width: 46%;
+  position: relative;
+  left: 52%;
+  overflow: hidden;
 }
 
-.left-content h1{
-  margin: 0 auto;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 45px;
-  text-shadow: 5px 2px #575964;
+.col-2{
+  float: left;
+  width: 46%;
+  position: relative;
+  left: 56%;
+  overflow: hidden;
 }
 
 .one{
@@ -118,31 +127,10 @@ body, html{
 }
 
 .experience{
-}
-
-.experience-left{
-  float:left;
-  width: 70%;
-  /* border: 2px solid red; */
-  color: white;
-  position: relative;
+  border: 3px solid red;
   height: 100%;
-  
-}
-
-.experience-right{
-  float:right;
-  width: 30%;
-  /* border: 2px solid yellow; */
-  color: white;
-}
-
-.willowtree{
-  padding-left: 10%;
-}
-
-.willowtree h1,p{
-  margin: 0 auto;
+  overflow: auto;
+  position: relative;
 }
 
 /* #janecontent img{
