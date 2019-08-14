@@ -25,6 +25,20 @@ body, html{
     color: white;
   }
 
+.introduction{
+  height: 120%;
+  background-color:#232c38;
+}
+
+.introduction h1{
+
+}
+
+.intro-pic{
+  border:3px solid;
+  float:left;
+}
+
 .first{
   height:100%;
   background-image: url('backgroundme.jpg');
@@ -122,6 +136,7 @@ body, html{
   border: 3px solid green;
   height: 40vh;
 }
+
 
 .experience{
   border: 3px solid red;
@@ -386,12 +401,34 @@ body, html{
 
 .box2{
     position:relative;
-    
 }
 
 .section2{
     background-color:#232c38;
     height:150vh;
+}
+
+.intro-container{
+  position: relative;
+  border: 3px solid red;
+  height: 100%;
+}
+
+.intro-col1{
+  position: absolute;
+  left: 30px;
+  margin-left:10%;
+} 
+
+.intro-col1 img{
+  width: 50%;
+}
+
+.intro-col2{
+  position: absolute;
+  background-color: white;
+  top: 40%;
+  left: 50%;
 }
 
 .container1{
