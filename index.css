@@ -15,7 +15,7 @@ body, html{
 .topnav {
     /* background-color: #0b0b10; */
     overflow: hidden;
-    background-color: #333;
+    background-color: #232c38;
   }
 
   .topnav a{
@@ -36,7 +36,8 @@ body, html{
 
 .introduction{
   height: 125vh;
-  background-color:#232c38;
+  /* background-color:#232c38; */
+  background-color: #0b0b10;
 }
 
 .intro-container{  
@@ -68,12 +69,12 @@ body, html{
 }
 
 .intro-pic img:hover{
-  box-shadow: 11px 11px #77f8f3;
+  box-shadow: 13px 13px #77f8f3;
 }
 
 .intro-box{
-  /* border: 3px solid green; */
-  background-color:#e5e5e5;
+  /* background-color:#e5e5e5; */
+  background-color: #232c38;
   position: absolute;
   min-height: 300px;
   max-width: 500px;
@@ -84,12 +85,12 @@ body, html{
   /* box-shadow: 5px 3px #77f8f3; */
 }
 
-.intro-box h1{
-  color:#0b0b10;
+.intro-box h3{
+  color:#e5e5e5;
 }
 
 .intro-box p{
-  color:#0b0b10;
+  color:#e5e5e5;
 }
 
 .first{
