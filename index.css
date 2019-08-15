@@ -4,29 +4,38 @@ body, html{
     padding:0;
 }
 
+.nav-logo{
+  float: left;
+  padding: 5px;
+  /* border: 2px solid red; */
+  padding-top:7px;
+  padding-left: 7px;
+}
+
 .topnav {
     /* background-color: #0b0b10; */
     overflow: hidden;
-    background: #232c38;
+    background-color: #333;
   }
 
-  .topnav p{
+  .topnav a{
     margin:0;
+    margin-top: 12px;
     float: right;
-    color: #00fff9;
+    color: white;
     text-align: center;
-    padding: 16px 30px;
+    padding: 10px 30px;
     text-decoration: none;
     font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
   }
 
-  .topnav p:hover {
-    color: white;
+  .topnav a:hover {
+    text-shadow: #00fff9 3px 3px 1px;
   }
 
 .introduction{
-  height: 120vh;
+  height: 125vh;
   background-color:#232c38;
 }
 
@@ -53,16 +62,19 @@ body, html{
 .intro-pic img{
   width: 73%;
   margin-left: 35%;
+  filter: sepia(10%);
 }
 
 .intro-box{
   /* border: 3px solid green; */
   background-color:#e5e5e5;
   position: absolute;
-  margin-top: 43%;
   min-height: 300px;
   max-width: 500px;
   padding: 30px;
+  margin-right: 30%;
+  margin-top: 40%;
+  margin-bottom: 20%;
   box-shadow: 5px 3px #77f8f3;
 }
 
@@ -305,9 +317,6 @@ body, html{
     font-size: 15px;
 }
 
-.row{
-    margin-top:70px;
-}
 
 .row:after{
     content:"";
@@ -331,6 +340,7 @@ body, html{
 .parallax2{
     background-image:url("kedge.jpg");
     background-repeat:no-repeat;
+    filter: brightness(80%);
     background-attachment:fixed;
     background-size: cover;
     background-position:center;
@@ -343,6 +353,7 @@ body, html{
 
 .parallax3{
     background-image:url("interns.jpg");
+    filter: brightness(70%);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size: cover;
@@ -356,7 +367,9 @@ body, html{
 
 #h1{
     color:#77f9f2;
+    /* border: 3px solid red; */
     padding-top:50px;
+    padding-bottom: 30px;
     text-align:center;
     font-size:45px;
     margin-top:0px;
