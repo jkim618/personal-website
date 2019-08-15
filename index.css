@@ -63,6 +63,12 @@ body, html{
   width: 73%;
   margin-left: 35%;
   filter: sepia(10%);
+  box-shadow: none;
+  transition: box-shadow 0.2s;
+}
+
+.intro-pic img:hover{
+  box-shadow: 11px 11px #77f8f3;
 }
 
 .intro-box{
@@ -75,7 +81,7 @@ body, html{
   margin-right: 30%;
   margin-top: 40%;
   margin-bottom: 20%;
-  box-shadow: 5px 3px #77f8f3;
+  /* box-shadow: 5px 3px #77f8f3; */
 }
 
 .intro-box h1{
@@ -138,6 +144,7 @@ body, html{
   left: 7%;
 }
 
+
 .rightt{
   height: 100%;
   float: right;
@@ -186,18 +193,11 @@ body, html{
 
 
 .experience{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 100%;
   overflow: auto;
   position: relative;
 }
-
-
-/* #janecontent img{
-  width: 430px;
-  position: absolute;
-  background-color:rgba(255,255,255,0.5);
-} */
 
 .three{
     background:#0c0d13;
@@ -476,7 +476,7 @@ body, html{
   float: left;
   width: 52%;
   position: relative;
-  left: 52%;
+  left: 55%;
   overflow: hidden;
   /* border: 2px solid red; */
   margin-left:auto;
@@ -486,7 +486,7 @@ body, html{
 }
 
 .col-1-desc{
-  border: 2px solid;
+  /* border: 2px solid; */
   width: 90%;
   margin: auto;
   text-align: left;
@@ -512,10 +512,11 @@ body, html{
   float: left;
   width: 40%;
   position: relative;
-  left: 56%;
+  left: 57%;
+  padding-right: 3%;
   overflow: hidden;
   text-align: center;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   margin-bottom: 60px;
 }
 
@@ -526,6 +527,24 @@ body, html{
   position: relative;
 }
 
+.col-1-desc p{
+  margin: 0 auto;
+}
+
+#desc-p{
+  /* box-shadow: 5px 5px #78f9f2;
+  border: 1px solid; */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.col-1-desc h1{
+  margin: 0 auto;
+}
+
+.col-1-desc h3{
+  margin: 0 auto;
+}
 
 * {
     box-sizing: border-box;
