@@ -7,11 +7,23 @@
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Asap|Fira+Sans|Merriweather+Sans:300,800|Nunito:200,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title></title>
+	<title>Jane Kim.</title>
 </head>
 <body>
 
-<div class="topnav">
+<header>
+    <!-- <img src="https://codetheweb.blog/assets/img/icon2.png"> -->
+    <nav>
+        <ul> 
+            <li><a onclick = "slideDown()">About me</a></li>
+            <li><a onclick="three()">Skills</a></li>    
+            <li><a onclick = "experience()">Experience</a></li>
+            <li><a onclick = "contact()">Contact</a></li>
+        </ul>
+    </nav>    
+</header>
+
+<!-- <div class="topnav">
     <div class="nav-logo">
         <img src="nsd.jpg" width="50" height="50"/>
     </div>
@@ -20,7 +32,7 @@
     <a>Skills</a>
     <a onclick = "slideDown()">About me</a>
 </div>
-
+ -->
 
 <!-- <div class="parallax" id="parallax">
     <div class="janekim">
@@ -42,11 +54,19 @@
 <script>
     function slideDown(){
         $('html,body').animate({scrollTop:
-        $(".about-me").offset().top},600)
+        $(".introduction").offset().top},600)
         }
+    function three(){
+        $('html,body').animate({scrollTop:
+        $(".three").offset().top},700)
+    }
     function experience(){
         $('html,body').animate({scrollTop:
-        $(".section2").offset().top},950)
+        $(".section2").offset().top},900)
+    }
+    function contact(){
+        $('html,body').animate({scrollTop:
+        $(".footer").offset().top},1000)
     }
 </script>
 
@@ -200,7 +220,7 @@
                     <h3>Nonstop Delivery, Chantilly, VA</h3>
                     <p>June 2019 - August 2019</p>
                     <br/>
-                    <p id="desc-p">As a Customer Service Representative, 
+                    <p id="">As a Customer Service Representative, 
                     </p>
                 </div>
             </div>
@@ -276,7 +296,33 @@
 </div> -->
 
 <div class="footer">
-    <h1 id ="h1">Let's Connect!</h1>
+        <h1 id ="h1">Let's Connect</h1>
+        <h4>I am always looking for opportunities to expand my interests! 
+            Feel free to reach out to me if you want to have a chat!</h4>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <div class="footer-git">
+                    <a href="https://github.com/jkim618" style="color: inherit;"target="_blank">
+                        <i id="linked" class="fa fa-github" style="font-size:36px">
+                        </i>
+                        <p>https://github.com/jkim618</p>
+                    </a>
+                </div>
+                <div class="footer-in">
+                    <a href="https://www.linkedin.com/in/jooaeunkim618/" style="color: inherit;"target="_blank">
+                        <i id="github" class="fa fa-linkedin-square" style="font-size:36px">
+                        </i>
+                        <p>https://www.linkedin.com/in/jooaeunkim618/</p>
+                    </a>
+                </div>
+                <div class="footer-mail">
+                    <a href="mailto:jk9ay@virginia.edu?subject=Mail from Website" style="color: inherit;"target="_blank">
+                        <i id="linked" class="fa fa-envelope" style="font-size:36px">
+                        </i>
+                        <p>jk9ay@virginia.edu</p>
+                    </a>
+                </div>
+        </div>
 </div>
     
 

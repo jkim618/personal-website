@@ -4,6 +4,46 @@ body, html{
     padding:0;
 }
 
+header img {
+  height: 80px;
+  border: 3px solid blue;
+}
+
+header {
+  /* background: rgba(255,255,255,0.9); */
+  /* position: fixed; */
+  background: #232c38;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  padding: 5px;
+}
+
+header li a:hover{
+  color: #00fff9;
+  padding: 5px;
+  background-color: #0d0d13;
+}
+
+
 .nav-logo{
   float: left;
   padding: 5px;
@@ -15,7 +55,7 @@ body, html{
 .topnav {
     /* background-color: #0b0b10; */
     overflow: hidden;
-    background-color: #232c38;
+    /* background-color: #232c38; */
   }
 
   .topnav a{
@@ -32,15 +72,19 @@ body, html{
 
   .topnav a:hover {
     text-shadow: #00fff9 3px 3px 1px;
+
   }
 
 .introduction{
   height: 125vh;
   /* background-color:#232c38; */
-  background-color: #0b0b10;
+  background-color:#232c38;
+  /* background-color: #0b0b10; */
 }
 
 .intro-container{  
+  /* border: 3px solid green; */
+  margin-top: -10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -65,17 +109,16 @@ body, html{
   margin-left: 35%;
   filter: sepia(10%);
   box-shadow: none;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.27s;
 }
 
 .intro-pic img:hover{
-  box-shadow: 13px 13px #77f8f3;
+  box-shadow: 16px 16px #77f8f3;
 }
 
 .intro-box{
   /* background-color:#e5e5e5; */
-  background-color: #232c38;
-  position: absolute;
+  background-color: #e5e5e5;
   min-height: 300px;
   max-width: 500px;
   padding: 30px;
@@ -86,11 +129,11 @@ body, html{
 }
 
 .intro-box h3{
-  color:#e5e5e5;
+  color:#0d0d13;
 }
 
 .intro-box p{
-  color:#e5e5e5;
+  color:#0d0d13;
 }
 
 .first{
@@ -105,7 +148,6 @@ body, html{
   margin-top: 30px;
   width: 140px;
   opacity: 0.8;
-
 }
 
 .first img:hover{
@@ -420,31 +462,6 @@ body, html{
     overflow: hidden;
 }
 
-
-#github{
-    margin-right:20px;
-}
-
-#github:hover{
-    color:#c5c6c8;
-}
-
-#linked{
-    margin:20px;
-}
-
-#linked:hover{
-    color:#c5c6c8;
-}
-
-#resume{
-    margin:20px;
-}
-
-#resume:hover{
-    color:#c5c6c8;
-}
-
 .section1{
     height:150vh;
     background:#15202b;
@@ -467,7 +484,8 @@ body, html{
 
 .section2{
     background-color:#232c38;
-    height:150vh;
+    height:130%;
+    overflow-y: scroll;
 }
 
 .container1{
@@ -690,7 +708,69 @@ body, html{
     }
   }
 
-.project{
-  background-color: black;
-  height: 100vh;
+
+.footer{
+  background-color:#646873;
+  height: 65%;
+}
+
+.footer h4{
+  color: #c5c6c8;
+  font-family: 'Nunito', sans-serif;
+  /* border: 3px solid red; */
+  text-align:center;
+  margin-top: -18px;
+  font-size: 23px;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+.footer-container{
+  /* border: 2px solid blue; */
+  text-align: center;
+  position: relative;
+}
+
+.footer-icons{
+  /* border: 3px solid red; */
+}
+
+.footer-in p{
+  display: inline-block;
+}
+
+.footer-in:hover{
+  color: #77f8f3;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.footer-git p{
+  display: inline-block;
+}
+
+.footer-git:hover{ 
+  color: #77f8f3;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.footer-mail p{
+  display: inline-block;
+}
+
+.footer-mail:hover{
+  color: #77f8f3;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
