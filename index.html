@@ -11,8 +11,9 @@
 </head>
 <body>
 
-<header>
-    <!-- <img src="https://codetheweb.blog/assets/img/icon2.png"> -->
+<!-- <header>
+    <img src="https://codetheweb.blog/assets/img/icon2.png">
+    <h1>Jane Kim</h1>
     <nav>
         <ul> 
             <li><a onclick = "slideDown()">About me</a></li>
@@ -21,18 +22,25 @@
             <li><a onclick = "contact()">Contact</a></li>
         </ul>
     </nav>    
-</header>
+</header> -->
 
-<!-- <div class="topnav">
-    <div class="nav-logo">
-        <img src="nsd.jpg" width="50" height="50"/>
-    </div>
-    <a href="#contact">Contact</a>
-    <a onclick = "experience()">Experience</a>
-    <a>Skills</a>
-    <a onclick = "slideDown()">About me</a>
-</div>
- -->
+<nav class="navbar">
+        <a href="#" class="logo">logo</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a onclick = "slideDown()" class="nav-links">About me</a>
+            </li>
+            <li>
+                <a onclick="three()" class="nav-links">Skills</a>
+            </li>
+            <li>
+                <a onclick = "experience()" class="nav-links">Experience</a>
+            </li>
+            <li>
+                <a onclick = "contact()" class="nav-links">Contact</a>
+            </li>
+        </ul>
+</nav>
 
 <!-- <div class="parallax" id="parallax">
     <div class="janekim">
@@ -68,6 +76,13 @@
         $('html,body').animate({scrollTop:
         $(".footer").offset().top},1000)
     }
+    let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+});
 </script>
 
 <div class="first">
@@ -297,8 +312,8 @@
 
 <div class="footer">
         <h1 id ="h1">Let's Connect</h1>
-        <h4>I am always looking for opportunities to expand my interests! 
-            Feel free to reach out to me if you want to have a chat!</h4>
+        <h4>I am always looking for opportunities to explore my interests! 
+            Feel free to reach out to me if you want to chat!</h4>
         <div class="footer-container">
             <div class="footer-icons">
                 <div class="footer-git">
@@ -322,6 +337,10 @@
                         <p>jk9ay@virginia.edu</p>
                     </a>
                 </div>
+            <div class="copyright">
+                <p id="copyright">Copyright © 2019 Jane Kim</p>
+                <p id="copyright2">HTML | CSS | JavaScript | Front-End Development</p>
+            </div>
         </div>
 </div>
     
