@@ -24,8 +24,8 @@
     </nav>    
 </header> -->
 
-<nav class="navbar">
-        <a href="#" class="logo">logo</a>
+<!-- <nav class="navbar">
+        <a href="#" class="logo"><img src="mylogo3.jpg"/></a>
         <ul class="main-nav" id="js-menu">
             <li>
                 <a onclick = "slideDown()" class="nav-links">About me</a>
@@ -39,8 +39,24 @@
             <li>
                 <a onclick = "contact()" class="nav-links">Contact</a>
             </li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </li>
         </ul>
-</nav>
+</nav> -->
+
+<div class="topnav" id="myTopnav">
+    <a onclick = "slideDown()" >About Me</a>
+    <a onclick="three()">Skills</a>
+    <a onclick = "experience()">Experience</a>
+    <a onclick = "contact()">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
 
 <!-- <div class="parallax" id="parallax">
     <div class="janekim">
@@ -76,13 +92,14 @@
         $('html,body').animate({scrollTop:
         $(".footer").offset().top},1000)
     }
-    let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
-
-navBarToggle.addEventListener('click', function () {
-    
-    mainNav.classList.toggle('active');
-});
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>
 
 <div class="first">
@@ -145,11 +162,13 @@ navBarToggle.addEventListener('click', function () {
         </div>
         <div class = "intro-column">
             <div class = "intro-box">
-                <h3>Hello, I am Jane Kim.</h3>
-                <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
-                    minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
-                    I grew interest in front-end web development. I am constantly looking for opportunities to improve
-                    both my technical and designing skills by building applications that are modern and interesting.
+                <div class="intro-box-content">
+                    <h3>Hello, I am Jane Kim.</h3>
+                    <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
+                        minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
+                        I grew interest in front-end web development. I am constantly looking for opportunities to improve
+                        both my technical and designing skills by building applications that are modern and interesting.
+                </div>
                 </p>
             </div>
         </div>
@@ -235,7 +254,9 @@ navBarToggle.addEventListener('click', function () {
                     <h3>Nonstop Delivery, Chantilly, VA</h3>
                     <p>June 2019 - August 2019</p>
                     <br/>
-                    <p id="">As a Customer Service Representative, 
+                    <p id="">As a Customer Service Representative, I answered inbound customer care calls, 
+                        replied to emails, and acted as an information resource. Serving as one of the lead chat
+                        operators, I decreased the wait time of customers by upto 30% by quickly 
                     </p>
                 </div>
             </div>
