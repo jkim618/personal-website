@@ -2,61 +2,13 @@
 <html>
 <head>
     <link rel='stylesheet' href='index.css' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Muli:200,400" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Asap|Fira+Sans|Merriweather+Sans:300,800|Nunito:200,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Jane Kim.</title>
 </head>
 <body>
 
-<!-- <header>
-    <img src="https://codetheweb.blog/assets/img/icon2.png">
-    <h1>Jane Kim</h1>
-    <nav>
-        <ul> 
-            <li><a onclick = "slideDown()">About me</a></li>
-            <li><a onclick="three()">Skills</a></li>    
-            <li><a onclick = "experience()">Experience</a></li>
-            <li><a onclick = "contact()">Contact</a></li>
-        </ul>
-    </nav>    
-</header> -->
-
-<!-- <nav class="navbar">
-        <a href="#" class="logo"><img src="mylogo3.jpg"/></a>
-        <ul class="main-nav" id="js-menu">
-            <li>
-                <a onclick = "slideDown()" class="nav-links">About me</a>
-            </li>
-            <li>
-                <a onclick="three()" class="nav-links">Skills</a>
-            </li>
-            <li>
-                <a onclick = "experience()" class="nav-links">Experience</a>
-            </li>
-            <li>
-                <a onclick = "contact()" class="nav-links">Contact</a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-            </li>
-        </ul>
-</nav> -->
-
-<div class="topnav" id="myTopnav">
-    <a onclick = "slideDown()" >About Me</a>
-    <a onclick="three()">Skills</a>
-    <a onclick = "experience()">Experience</a>
-    <a onclick = "contact()">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-
-  </div>
 
 <!-- <div class="parallax" id="parallax">
     <div class="janekim">
@@ -102,7 +54,8 @@
 }
 </script>
 
-<div class="first">
+<div class="first" id="home">
+    <img src="mylogo.jpg" style="width: 100px" id="first-logo"/>
     <div class="leftt">
         <div class="left-content">
             <div class="one">
@@ -117,42 +70,53 @@
             <br/>
             <p>Jane Kim. Currently a 4th year UVA student looking for full-time position as a front-end developer. 
                 Specializing in front-end web development in languages such as Javascript, HTML, CSS, and ReactJS.</p>
-            <img src="arrow.png" onclick="slideDown()" class="arrow">
+            <img src="arrow.png" onclick="slideDown()" id="arrow">
         </div>
     </div>
-    <div class="rightt">
-        <div class="right-content">
-            
+        <div class="banner-area">
+            <a href="#home">
+                <div id="nav1" class="btn-area">
+                    <h2>
+                        <i class="fa fa-home"></i>
+                        Home
+                    </h2>
+                </div>
+            </a>
+            <a href="#intro">
+                <div id="nav2" class="btn-area">
+                    <h2>
+                        <i class="fa fa-address-book"></i>
+                        About Me
+                    </h2>
+                </div>
+            </a>
+            <a href="#skill">
+                <div id="nav3" class="btn-area">
+                    <h2>
+                        <i class="fa fa-pencil"></i>
+                        Skills</h2>
+                </div>
+            </a>
+            <a href="#exp">
+                <div id="nav4" class="btn-area">
+                    <h2>
+                        <i class="fa fa-book"></i>
+                        Experience
+                    </h2>
+                </div>
+            </a>
+            <a href="#contact">
+                <div id="nav5" class="btn-area">
+                    <h2>
+                        <i class="fa fa-phone"></i>
+                        Contact
+                    </h2>
+                </div>
+            </a>
         </div>
-    </div>
 </div>
 
-<!-- <div class="about-me" id="aboutme">
-    <h1 id="h1">Introduction</h1>
-    <div class="row1">
-        <div class="column1">
-            <img src="mee.png" id="myimage">
-        </div>
-        <div class="column1">
-            <div id="description1">
-            <h3>Hello, I am Jane Kim.</h3>
-            <hr id="aboutme_hr">
-            <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
-                minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
-                I grew interest in front-end web development. I am constantly looking for opportunities to improve
-                both my technical and designing skills by building applications that are modern and interesting.
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/jooaeunkim618/" style="color: inherit;"target="_blank"><i id="github" class="fa fa-linkedin-square" style="font-size:36px"></i></a>
-                    <a href="https://github.com/jkim618" style="color: inherit;"target="_blank"><i id="linked" class="fa fa-github" style="font-size:36px"></i></a>
-                    <i id="resume" class="fa fa-wpforms" style="font-size:36px"></i>
-                </div>
-            </div>
-            </p>
-        </div>
-    </div>
-</div> -->
-
-<div class="introduction">
+<div class="introduction" id="intro">
     <h1 id="h1">Introduction</h1>
     <div class="intro-container">
         <div class = "intro-column">
@@ -178,7 +142,7 @@
 <div class="parallax2">
 </div>    
 
-<div class="three">
+<div class="three" id="skill">
     <h1 id="h1">Developer, Designer, Dancer</h1>
     <div class="row">
         <div class="column">
@@ -203,7 +167,7 @@
 <div class="parallax3">
 </div>  
 
-<div class = "section2">
+<div class = "section2" id="exp">
     <h1 id ="h1">Experience</h1>
     <div class="container1">
         <div class="container2">
@@ -254,9 +218,9 @@
                     <h3>Nonstop Delivery, Chantilly, VA</h3>
                     <p>June 2019 - August 2019</p>
                     <br/>
-                    <p id="">As a Customer Service Representative, I answered inbound customer care calls, 
+                    <p id ="customer-service">As a Customer Service Representative, I answered inbound customer care calls, 
                         replied to emails, and acted as an information resource. Serving as one of the lead chat
-                        operators, I decreased the wait time of customers by upto 30% by quickly 
+                        operators, I decreased the wait time of customers by upto 30% by quickly finding solutions and answers.
                     </p>
                 </div>
             </div>
@@ -331,7 +295,7 @@
       </div>
 </div> -->
 
-<div class="footer">
+<div class="footer" id="contact">
         <h1 id ="h1">Let's Connect</h1>
         <h4>I am always looking for opportunities to explore my interests! 
             Feel free to reach out to me if you want to chat!</h4>

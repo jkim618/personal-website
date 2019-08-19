@@ -4,6 +4,82 @@ body, html{
     padding:0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+.banner-area{
+  /* height: 100vh; */
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height:200px;
+}
+
+.banner-area h2{
+  position: relative;
+  top: -5px;
+  text-align: center;
+}
+
+.banner-area a{
+  text-decoration: none;
+}
+
+.btn-area{
+  background-color: #77f8f3;
+  width: 300px;
+  height: 60px;
+  border-radius: 30px;
+  position: fixed;
+  right: -230px;
+  transition: .8s ease;
+  box-shadow: 4px 5px 10px #000;
+}
+
+.btn-area:hover{
+  background-color: #e5e5e5;
+  position: fixed;
+  right: -50px;
+  width: 300px;
+  border: none;
+  color: #232c38;
+  border-radius: 0;
+}
+
+.btn-area h2 i:hover{
+  color: white;
+}
+
+#nav1{
+  top: 200px;
+}
+
+#nav2{
+  top: 270px;
+}
+
+#nav3{
+  top: 340px;
+}
+
+#nav4{
+  top: 410px;
+}
+
+#nav5{
+  top: 480px;
+}
+
+.btn-area h2 i{
+  position: absolute;
+  left: 27px;
+  color: #232c38;
+  font-size: 25px !important;
+  padding-top: 4px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -143,7 +219,6 @@ header li a {
   color: #e5e5e5;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
   padding: 5px;
 }
 
@@ -219,6 +294,14 @@ header li a:hover{
   color:#0d0d13;
 }
 
+#first-logo{
+  mix-blend-mode: multiply;
+  /* border: 3px solid; */
+  transform: rotate(270deg);
+  z-index: 1;
+  margin-top: 30px;
+}
+
 
 .first{
   height:100%;
@@ -228,14 +311,13 @@ header li a:hover{
   background-size: cover; 
 }
 
-.first img{
+#arrow{
   margin-top: 30px;
   width: 140px;
   opacity: 0.8;
 }
 
-.first img:hover{
-  /* border: 3px solid; */
+#arrow:hover{
   animation: wiggle 300ms infinite;
   animation-timing-function: linear;  
 }
@@ -259,12 +341,10 @@ header li a:hover{
   padding-top: 30%;
   padding-right: 10%;
   position: absolute;
-  font-family: 'Fira Sans', sans-serif;
 }
 
 .left-content h1{
   margin: 0 auto;
-  font-family: 'Fira Sans', sans-serif;
   font-size: 45px;
   text-shadow: 5px 2px #232c38;
 }
@@ -307,7 +387,7 @@ header li a:hover{
   padding-left: 130px;
   font-size: 30px;
   color: #232c38;
-  font-family: 'Fira Sans', sans-serif;
+
 }
 
 .first-description-inside h2{
@@ -406,13 +486,11 @@ header li a:hover{
     color:#c5c6c8;
     font-weight:800;
     margin-top: 10px;
-    font-family: 'Nunito', sans-serif;
 
 }
 
 #description1 p{
     color:#c5c6c8;
-    font-family: 'Nunito', sans-serif;
     overflow: hidden;
 }
 
@@ -448,8 +526,6 @@ header li a:hover{
     width:50%;
     text-align:center;
     color:#0d0d13;
-    font-family: 'Nunito', sans-serif;
-
 }
 
 .col2 p{
@@ -513,12 +589,10 @@ header li a:hover{
     text-align:center;
     font-size:45px;
     margin-top:0px;
-    font-family: 'Fira Sans', sans-serif;
 }
 .parallax{
     color:white;
     margin-top:0px;
-    font-family: 'Fira Sans', sans-serif;
     font-size:80px;
     position:relative;
 }
@@ -602,11 +676,9 @@ header li a:hover{
 }
 
 .col-1-desc{
-  /* border: 2px solid; */
   width: 90%;
   margin: auto;
   text-align: left;
-  font-family: 'Nunito', sans-serif;
 }
 
 .col-1-desc h3{
@@ -645,6 +717,10 @@ header li a:hover{
 
 .col-1-desc p{
   margin: 0 auto;
+}
+
+#customer-service{
+  padding-bottom: 75px;
 }
 
 #desc-p{
@@ -800,7 +876,6 @@ header li a:hover{
 
 .footer h4{
   color: #c5c6c8;
-  font-family: 'Nunito', sans-serif;
   /* border: 3px solid red; */
   text-align:center;
   margin-top: -18px;
