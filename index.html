@@ -5,32 +5,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Jane Kim.</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto:300,400&display=swap" rel="stylesheet">
+    <title>Jane Kim.</title>
 </head>
 <body>
-
-
-<!-- <div class="parallax" id="parallax">
-    <div class="janekim">
-        <h2>JANE KIM.</h2>
-    </div>
-    <script>
-        function slideDown(){
-            $('html,body').animate({scrollTop:
-            $(".about-me").offset().top},600)
-            }
-        function experience(){
-            $('html,body').animate({scrollTop:
-            $(".section2").offset().top},950)
-        }
-    </script>
-    <img src="arrow.png" onclick="slideDown()" class="arrow">
-</div> -->
 
 <script>
     function slideDown(){
         $('html,body').animate({scrollTop:
-        $(".introduction").offset().top},600)
+        $(".introduction").offset().top},200)
         }
     function three(){
         $('html,body').animate({scrollTop:
@@ -45,17 +28,17 @@
         $(".footer").offset().top},1000)
     }
     function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+    }
 }
 </script>
 
 <div class="first" id="home">
-    <img src="mylogo.jpg" style="width: 100px" id="first-logo"/>
+    <img src="mylogo.jpg" href="#home" style="width: 100px" id="first-logo"/>
     <div class="leftt">
         <div class="left-content">
             <div class="one">
@@ -155,7 +138,10 @@
         </div>
         <div class="column">
             <img src="icon3.jpg">
-            <p>I have a high passion for dancing. I am currently in KEdge Dance Crew at UVA.</p>
+            <p>I have a high passion for dancing. I am currently in K-Edge Dance Crew at UVA,
+                a K-Pop dance crew that spreads students' passion for dancing and K-Pop through
+                performances and social media
+            </p>
         </div>
     </div>
     <hr id = "skills_hr">
@@ -178,9 +164,9 @@
                     <p>June 2019 - August 2019</p>
                     <br/>
                     <p id="desc-p">I worked at WillowTree as a Software Engineer Intern
-                        in the web development team for HBO Nordic. I also worked 
-                        closely with the design team and implemented 
-                        UI changes in order to fix the discrepancies between different
+                        in the web development team for HBO Nordic. I implemented 
+                        UI changes for smooth, responsive design and other critical fixes
+                        in order to fix the discrepancies between different
                         web browers and the mobile version of the application.
                     </p>
                 </div>
@@ -192,11 +178,30 @@
             </div>
         </div>
         <div class="container2">
+                <div class = "col-1">
+                    <div class= "col-1-desc">
+                        <h1>Technical Lead</h1>
+                        <h3>Greens to Grounds, Charlottesville, VA</h3>
+                        <p>November 2018 - May 2019</p>
+                        <br/>
+                        <p id ="customer-service">As a technical lead, I managed the website and the payment portal.
+                            I coordinated front-end and back-end of the website by implementing changes from marketing 
+                            and making sure all operations obtain necessary documents
+                        </p>
+                    </div>
+                </div>
+                <div class = "col-2">
+                    <div class="col-2-desc">
+                        <img src="greens.jpg" style="width:175px"/>
+                    </div>
+                </div>
+            </div>
+        <div class="container2">
             <div class = "col-1">
                 <div class= "col-1-desc">
                     <h1>Web Developer</h1>
                     <h3>HackCville, Charlottesville, VA</h3>
-                    <p>June 2019 - August 2019</p>
+                    <p>August 2018 - December 2018</p>
                     <br/>
                     <p id="desc-p">I participated in a Student Web Development program
                         where I learned basic prototyping skills with Figma.
@@ -216,7 +221,7 @@
                 <div class= "col-1-desc">
                     <h1>Customer Service Representative</h1>
                     <h3>Nonstop Delivery, Chantilly, VA</h3>
-                    <p>June 2019 - August 2019</p>
+                    <p>July 2017 - August 2018</p>
                     <br/>
                     <p id ="customer-service">As a Customer Service Representative, I answered inbound customer care calls, 
                         replied to emails, and acted as an information resource. Serving as one of the lead chat
@@ -232,68 +237,6 @@
         </div>
     </div>
 </div>
-
-<!-- <div class="section2">
-    <h1 id ="h1">Experience</h1>
-    <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <div class="row2">
-                <div class="col2" id="col2-left">
-                    <img src="willowtree.jpg" style="width:130px"/>
-                    <h2>June 2019 - Current</h2>
-                </div>
-                <div class="col2">
-                    <p>I am currently working as a Web Development Intern at WillowTree Apps.
-                        I am mainly working on improving user experience on the HBO Nordic Web Application
-                        using ReactJS, Redux, HTML, and CSS. I am cooperating
-                        with designers to match visual design intent, as well as maintaining and scaling the
-                        Application by working with back-end database.
-                    </p>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <div class="row2">
-                <div class="col2" id="col2-left">
-                    <img src="hackcville.png" style="width:130px"/>
-                    <h2>Jan. 2018 - Current </h2>
-                </div>
-                <div class="col2">
-                    <p>I became involved in HackCville at UVA as a Marketing Team Member, analyzing various digital
-                        communications and marketing strategies. I then moved onto a Web Development Program where I was first
-                        exposed to building and designing websites through HTML, CSS, and JavaScript.
-                    </p>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <div class="row2">
-                    <div class="col2" id="col2-left">
-                        <img src="nsd.jpg" style="width:130px"/>
-                        <h2>Jul 2017 - Aug 2018</h2>
-                    </div>
-                    <div class="col2">
-                        <p>As a Customer Service Representative at Nonstop Delivery, I answered inbound 
-                            customer care calls and replied to emails, and also served as a chat operator
-                            to act as an information resource in live.
-                        </p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h2>2016</h2>
-              <p>Lorem ipsum..</p>
-            </div>
-          </div>
-      </div>
-</div> -->
 
 <div class="footer" id="contact">
         <h1 id ="h1">Let's Connect</h1>
