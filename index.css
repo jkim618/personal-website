@@ -283,7 +283,7 @@ header li a:hover{
   margin-left: 35%;
   filter: sepia(10%);
   box-shadow: none;
-  transition: box-shadow 0.27s;
+  transition: box-shadow 0.25s;
 }
 
 .intro-pic img:hover{
